@@ -1,0 +1,51 @@
+{
+  "presets": [
+    ["env", {
+      "loose": false,
+      "modules": "commonjs",
+      "spec": true,
+      "targets": {
+        "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+      },
+      "useBuiltIns": "usage",
+      "debug": false
+    }],
+    "stage-2"
+  ],
+  "plugins": [
+    "dynamic-import-node",
+    "transform-class-properties",
+    "transform-es5-property-mutators",
+    "transform-object-rest-spread",
+    "transform-runtime",
+    "transform-vue-jsx"
+  ],
+  "comments": false,
+  "env": {
+    "utils": {
+      "presets": [
+        [
+          "env",
+          {
+            "loose": true,
+            "modules": "commonjs",
+            "targets": {
+              "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+            }
+          }
+        ],
+      ],
+      "plugins": [
+        ["module-resolver", {
+          "root": ["webpcak4_demo"],
+          "alias": {
+            "webpcak4_demo/src": "webpcak4_demo/lib"
+          }
+        }]
+      ]
+    },
+    "test": {
+      "plugins": ["istanbul"]
+    }
+  }
+}
