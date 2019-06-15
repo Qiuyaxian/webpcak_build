@@ -36,6 +36,59 @@ npm run public
 ```
 
 
+## Usage
+
+<p>Import all components</p>
+
+``` bash
+import webpcak4_demo from '../static/lib/webpcak4_demo.common.js'
+
+Vue.use(webpcak4_demo)
+
+```
+
+<p>Or import specified component.</p>
+
+``` bash
+import { Tabbar } from '../static/lib/index.js'
+Vue.use(Tabbar)
+
+```
+
+<p>Or CDN在页面上引入 js 和 css 文件即可开始使用 </p>
+
+
+``` bash
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="lib/theme/index.css">
+	<script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
+	<script type="text/javascript" src="lib/index.js"></script>
+</head>
+<body>
+	<div id="app">
+	   <tabbar></tabbar>
+	</div>
+	<script>
+	    new Vue({
+	        el: '#app',
+	        data: {
+	            visible: false
+	        },
+	        methods: {
+	            show: function () {
+	                this.visible = true;
+	            }
+	        }
+	    })
+	  </script>
+</body>
+</html>
+
+```
+
 ## 项目结构规划
 
 ``` bash
