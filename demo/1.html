@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="lib/theme/index.css">
+	<script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
+	<script type="text/javascript" src="lib/index.js"></script>
+</head>
+<body>
+	<div id="app">
+	   <tabbar></tabbar>
+	</div>
+	<script>
+	    new Vue({
+	        el: '#app',
+	        data: {
+	            visible: false
+	        },
+	        methods: {
+	            show: function () {
+	                this.visible = true;
+	            }
+	        }
+	    })
+	  </script>
+</body>
+</html>
