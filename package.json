@@ -60,7 +60,7 @@
     "gulp-cssmin": "^0.2.0",
     "gulp-sass": "^4.0.2",
     "json-templater": "^1.2.0",
-    "node-notifier": "^5.4.0",
+    "node-notifier": "^8.0.1",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "ora": "^3.4.0",
     "os": "^0.1.1",
